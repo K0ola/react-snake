@@ -1,0 +1,52 @@
+.gameOver {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200; /* Priorité pour la GameOver */
+}
+
+.overlay {
+  position: absolute;
+  z-index: 999999; /* Toujours au-dessus de la vidéo */
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent noir */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.replayButton {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #cc0000;
+  }
+}
+
+.deathVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 100; /* En arrière-plan */
+  display: block;
+}

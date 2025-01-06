@@ -47,7 +47,7 @@ const Snake = ({ data, direction }) => {
         backgroundColor: "black",
         clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
         zIndex: 1,
-        transform: `translate(${dot[0]}px, ${dot[1]}px) ${rotation} translateY(25%)`, // La queue dépasse de 75% (ajustement Y)
+        transform: `translate(${dot[0]}px, ${dot[1]}px) ${rotation} translateY(25%)`,
       };
     }
 
